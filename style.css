@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    color: #eee;
+    background-color: rgb(33, 33, 70);
+    background-image: url("data:image/svg+xml,%3Csvg width='1000' height='1000' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.07' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    transition: background-color 1.5s;
+}
+
+/* LAYOUT */
+header{
+    position:relative;
+    height:36vh;
+    border-bottom: 1.5rem solid #eee;
+}
+main{
+    height:64vh;
+    display:flex;
+    font-size:2.1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.left, .right {
+    min-width: 35%;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align: center;
+    transform:translateY(-50%);
+    font-size: 3.5rem;
+}
+.number {
+    position:absolute;
+    left:50%;
+    top:100%;
+    font-size:7rem;
+    color:#222;;
+    background: #eee;
+    border-top: 0.7rem solid darkslateblue;
+    border-bottom: 0.7rem solid darkslateblue;
+    width: 15rem;
+    padding: 1.5rem 0;
+    text-align:center;
+    transform:translate(-50%,-50%);
+    transition: width 0.1s;
+}
+.between {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.again {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+.btn {
+    padding:1.7rem 3rem;
+    font-family: inherit;
+    font-size: 2rem;
+    box-shadow: inset 0 0 1px 2px darkslateblue;
+    border: 2px solid slateblue;
+    background: #eee;
+    color: #222;
+    transition:0.2s;
+    cursor:pointer;
+}
+.btn:hover {
+    color: #000;
+    background: #ffe;
+    border: 2px solid mediumslateblue;
+    box-shadow: inset 0 0 1px 2px darkslateblue,
+                  0 0 2px mediumslateblue;
+}
+.btn:active {
+    color: #222;
+    border: 2px solid darkslateblue;
+    box-shadow: inset 0 0 1px 2px darkslateblue,
+                  0 0 2px rgb(255, 255, 255);
+}
+/* LEFT ELEMENT */
+.left {
+    text-align:center;
+    padding: 0 2rem;
+}
+.guess {
+    margin: 0 auto 3rem;
+    background: none;
+    border: 4px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 5rem;
+    padding: 2.5rem;
+    width: 25rem;
+    display: block;
+    text-align: center;
+}
+
+/* RIGHT ELEMENT */
+.right {
+    padding-left: 4%;
+}
+
+section > p {
+    margin: 2rem 1rem;
+}
+.message {
+    margin-bottom:10rem
+}
+
+
+@media screen and (max-width: 900px) {
+    html{font-size: 8px;}
+  }
+@media screen and (max-width: 600px) {
+    html{font-size: 7px;}
+  }
